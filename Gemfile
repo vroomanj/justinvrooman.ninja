@@ -39,6 +39,7 @@ gem 'foundation-rails'
 group :development do
   gem 'rails_layout'
 end
+gem 'rails_12factor', group: :production
 gem 'simple_form'
 
 group :development, :test do
