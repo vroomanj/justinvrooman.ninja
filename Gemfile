@@ -35,7 +35,7 @@ gem 'unicorn', group: :production
 
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'bootswatch-rails'
-# gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 
 group :development, :test do
