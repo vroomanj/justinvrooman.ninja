@@ -35,6 +35,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'pg', group: :production
 gem 'puma', group: :production
+gem 'foundation-rails'
+group :development do
+  gem 'rails_layout'
+end
+gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
