@@ -4,7 +4,7 @@
 html, body {
   background-image: image-url("background.png");
   color: white;  
-  padding-top: 32px;
+  padding-top: 64px;
   padding-left: 5%;
   padding-right: 5%;
   height: 100%;
@@ -16,7 +16,8 @@ body {
 
 .navbar-toggle {
   float: left;
-  margin-left: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 @media (min-width: 0) {

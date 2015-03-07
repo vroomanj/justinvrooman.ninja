@@ -40,6 +40,8 @@ GEM
     arel (6.0.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootswatch-rails (3.2.4)
+      railties (>= 3.1)
     builder (3.2.2)
     byebug (3.5.1)
       columnize (~> 0.8)
@@ -164,6 +166,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootswatch-rails
   bundler (>= 1.7.0)
   byebug
   coffee-rails (~> 4.1.0)
