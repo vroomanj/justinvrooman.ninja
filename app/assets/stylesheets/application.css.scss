@@ -36,3 +36,16 @@ body {
     border: none;
   }
 }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.carousel{
+  margin-bottom: 32px;
+  height: 50%;
+}
+.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+.fill{width:100%;height:100%;background-position:center;background-size:cover;}

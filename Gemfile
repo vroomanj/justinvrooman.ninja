@@ -18,7 +18,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-bootstrap-sass'
   gem 'rails-assets-jasny-bootstrap'
 end
 
@@ -43,7 +43,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 gem 'puma'
-gem 'bootswatch-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
