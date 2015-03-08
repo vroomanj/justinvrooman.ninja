@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin!, except: [:index, :show]
 
   # GET /pages
   # GET /pages.json
@@ -65,6 +66,10 @@ class PagesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_page
       @page = Page.find(params[:id])
+    end
+
+    def set_links
+      @links = Page.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
