@@ -78,5 +78,20 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Required for Devise. Remember to change localhost:3000 to actual application host
-  config.action_mailer.default_url_options = { host: 'localhost:3000' }
-end
+  config.action_mailer.default_url_options = { :host => 'justinvrooman-ninja.herokuapp.com' }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default :charset => "utf-8"
+
+  config.action_mailer.smtp_settings = {
+    address: ENV['POSTMARK_SMTP_SERVER'],
+    port: 25,
+    domain: 'justinvrooman-ninja.herokuapp.com',
+    user_name: ENV['POSTMARK_API_TOKEN'],
+    password: ENV['POSTMARK_API_TOKEN'],
+    authentication: 'cram_md5',
+    enable_starttls_auto: true
+  }
+  end

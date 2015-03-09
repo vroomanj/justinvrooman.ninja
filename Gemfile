@@ -44,6 +44,8 @@ gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 gem 'puma'
 gem 'devise'
+gem 'mail'
+gem 'postmark'
 gem 'mail_form'
 gem 'simple_form'
 
