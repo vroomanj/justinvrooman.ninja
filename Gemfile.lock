@@ -92,6 +92,9 @@ GEM
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
     pg (0.18.1)
+    postmark (1.5.0)
+      json
+      rake
     puma (2.11.1)
       rack (>= 1.1, < 2.0)
     rack (1.6.0)
@@ -191,8 +194,10 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  mail
   mail_form
   pg
+  postmark
   puma
   rails (= 4.2.0)
   rails-assets-bootstrap-sass!
