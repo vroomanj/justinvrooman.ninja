@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.0'
+ruby '2.2.1'
 
 gem 'bundler', '>= 1.7.0'
 
@@ -44,6 +44,8 @@ gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 gem 'puma'
 gem 'devise'
+gem 'mail_form'
+gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -62,10 +62,6 @@ class PagesController < ApplicationController
     end
   end
 
-  # GET /pages/contact
-  def contact
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_page
