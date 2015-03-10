@@ -94,4 +94,4 @@ Rails.application.configure do
     authentication: 'cram_md5',
     enable_starttls_auto: true
   }
-  end
+end
