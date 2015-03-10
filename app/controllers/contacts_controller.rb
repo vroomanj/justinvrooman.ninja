@@ -13,4 +13,10 @@ class ContactsController < ApplicationController
       render :new
     end
   end
+
+  private
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def page_params
+      params.require(:contact).permit(:name, :email, :message, :nickname)
+    end
 end
