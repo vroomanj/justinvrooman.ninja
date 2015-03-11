@@ -97,7 +97,7 @@ body {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;  
-  /* width: 60%; */
+  width: 60%;
 }
 
 
@@ -138,17 +138,27 @@ body {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+  #custom-form-container {
+    width: 60%;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+  body {
+    margin-top: 10px;
+  }
 
+  #custom-form-container {
+    width: 70%;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+  #custom-form-container {
+    width: 80%;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -156,9 +166,15 @@ body {
   .carousel {
     display: none;
   }
+
+  #custom-form-container {
+    width: 90%;
+  }
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
-    
+  #custom-form-container {
+    width: 100%;
+  }  
 }
