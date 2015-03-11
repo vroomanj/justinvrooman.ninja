@@ -156,6 +156,10 @@ body {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  .carousel {
+    display: none;
+  }
+  
   #custom-form-container {
     width: 80%;
   }
@@ -163,10 +167,6 @@ body {
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-  .carousel {
-    display: none;
-  }
-
   #custom-form-container {
     width: 90%;
   }
