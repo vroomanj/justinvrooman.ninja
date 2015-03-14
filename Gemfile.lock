@@ -37,6 +37,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    addressable (2.3.7)
     arel (6.0.0)
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
@@ -98,6 +99,9 @@ GEM
     puma (2.11.1)
       rack (>= 1.1, < 2.0)
     rack (1.6.0)
+    rack-canonical-host (0.1.0)
+      addressable
+      rack (~> 1.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.0)
@@ -199,6 +203,7 @@ DEPENDENCIES
   pg
   postmark
   puma
+  rack-canonical-host
   rails (= 4.2.0)
   rails-assets-bootstrap-sass!
   rails-assets-jasny-bootstrap!
