@@ -66,7 +66,7 @@
       <tr>
         <td><%= page.title %></td>
         <td><%= page.author %></td>
-        <td><%= page.content %></td>
+        <td><%= markdown(page.content) %></td>
         <% if admin_signed_in? %>
           <td><%= link_to 'Show', page %></td>
           <td><%= link_to 'Edit', edit_page_path(page) %></td>
