@@ -14,19 +14,14 @@ body {
   padding: 50px 0 0 0;
 }
 
-.navbar-toggle {
+.left-toggle {
   float: left;
 }
 
 @media (min-width: 0) {
-  .navbar-toggle {
+  .left-toggle {
     display: block; /* force showing the toggle */
   }
-}
-
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
 }
 
 .carousel {
@@ -143,6 +138,10 @@ body {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  .left-toggle {
+    margin-left: 15px;
+  }
+
   .carousel {
     display: none;
   }
