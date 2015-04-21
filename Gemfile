@@ -49,6 +49,9 @@ gem 'postmark'
 gem 'mail_form'
 gem 'simple_form'
 gem 'rack-canonical-host'
+gem 'redcarpet'
+gem 'albino'
+gem 'nokogiri'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
