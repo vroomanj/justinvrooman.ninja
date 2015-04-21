@@ -51,7 +51,6 @@
   </a>
 </div>
 
-<!--
 <table>
   <thead>
     <tr>
@@ -68,9 +67,11 @@
         <td><%= page.title %></td>
         <td><%= page.author %></td>
         <td><%= page.content %></td>
-        <td><%= link_to 'Show', page %></td>
-        <td><%= link_to 'Edit', edit_page_path(page) %></td>
-        <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if admin_signed_in? %>
+          <td><%= link_to 'Show', page %></td>
+          <td><%= link_to 'Edit', edit_page_path(page) %></td>
+          <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -78,5 +79,6 @@
 
 <br>
 
-<%= link_to 'New Page', new_page_path %>
--->
+<% if admin_signed_in? %>
+  <%= link_to 'New Page', new_page_path %>
+<% end %>
