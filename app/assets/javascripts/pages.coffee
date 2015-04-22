@@ -8,4 +8,3 @@ $ ->
   $(".alert-success").bind 'click', (ev) =>
     $(".alert-success").fadeOut()
   setTimeout flashCallback, 3000
-  
