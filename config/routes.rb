@@ -1,16 +1,15 @@
 Rails.application.routes.draw do
   root 'pages#index'
 
-  get 'users/manage', to: 'devise/management#manage', as: 'manage_users'
+  resources :pages
+
   devise_for :users
+  scope "/admin" do
+    resources :users
+    get 'pages', to: 'pages#manage', as: 'manage_pages'
+  end
 
   devise_for :admins, :skip => [:registrations]
-
-  resources :pages do
-    collection do
-      get :manage
-    end
-  end
 
   get 'contact', to: 'contact#new'
   resource :contact, only: [:create], controller: :contact
