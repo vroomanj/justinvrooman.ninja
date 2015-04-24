@@ -27,9 +27,9 @@
           <td><%= page.author %></td>
           <td><%= page.created_at %></td>
           <td><%= page.updated_at %></td>
-          <td><%= link_to 'Show', page, class: "btn btn-default" %></td>
-          <td><%= link_to 'Edit', edit_page_path(page), class: "btn btn-default" %></td>
-          <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %></td>
+          <td><%= link_to 'Show', page, class: "btn btn-default pull-right" %></td>
+          <td><%= link_to 'Edit', edit_page_path(page), class: "btn btn-default pull-right" %></td>
+          <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default pull-right" %></td>
         </tr>
       <% end %>
     </tbody>

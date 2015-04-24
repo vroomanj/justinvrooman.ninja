@@ -10,12 +10,11 @@
   <table class="table table-hover">
     <thead>
       <tr>
-        <th class="col-md-1">Title</th>
-        <th class="col-md-1">Author</th>
-        <th class="col-md-7">Content</th>
-        <th class="col-md-1"></th>
-        <th class="col-md-1"></th>
-        <th class="col-md-1"></th>
+        <th>Title</th>
+        <th>Author</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
  
@@ -24,10 +23,9 @@
         <tr>
           <td><%= raw page.title %></td>
           <td><%= raw page.author %></td>
-          <td><%= raw page.content %></td>
-          <td><%= link_to 'Show', page, class: "btn btn-default" %></td>
-          <td><%= link_to 'Edit', edit_page_path(page), class: "btn btn-default" %></td>
-          <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %></td>
+          <td><%= link_to 'Show', page, class: "btn btn-default pull-right" %></td>
+          <td><%= link_to 'Edit', edit_page_path(page), class: "btn btn-default pull-right" %></td>
+          <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default pull-right" %></td>
         </tr>
       <% end %>
     </tbody>
