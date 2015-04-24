@@ -21,7 +21,10 @@
   </div>
   <div class="form-group">
     <%= f.label :content %><br>
-    <%= f.text_area :content, class: "form-control" %>
+    <div class='wmd-panel'>
+      <div id='wmd-button-bar'></div>
+      <%= f.text_area :content, class: "form-control wmd-input" %>
+    </div>
   </div>
   <div class="action">
     <%= f.submit class: "btn btn-primary" %>

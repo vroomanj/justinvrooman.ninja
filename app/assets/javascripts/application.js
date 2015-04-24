@@ -16,4 +16,7 @@
 //= require bootstrap
 //= require jasny-bootstrap
 //= require turbolinks
+//= require markdown.converter
+//= require markdown.sanitizer
+//= require markdown.editor
 //= require_tree .
