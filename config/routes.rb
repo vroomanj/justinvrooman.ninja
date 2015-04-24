@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   resources :pages do
     member { post :mercury_update }
+    collection do
+      get 'search'
+    end
   end
 
   devise_for :users

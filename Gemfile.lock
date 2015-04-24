@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/elasticsearch/elasticsearch-rails.git
+  revision: ed0d087de434db66aa3456ea8cf46a511fe3b15c
+  specs:
+    elasticsearch-model (0.1.7)
+      activesupport (> 3)
+      elasticsearch (> 0.4)
+      hashie
+    elasticsearch-rails (0.1.7)
+
+GIT
   remote: git://github.com/jejacks0n/mercury.git
   revision: 1cc637b0bccea19085f824d2881c6513ed5ee8ae
   specs:
@@ -52,6 +62,7 @@ GEM
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bonsai-elasticsearch-rails (0.0.4)
     builder (3.2.2)
     byebug (3.5.1)
       columnize (~> 0.8)
@@ -74,12 +85,23 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    elasticsearch (1.0.8)
+      elasticsearch-api (= 1.0.7)
+      elasticsearch-transport (= 1.0.7)
+    elasticsearch-api (1.0.7)
+      multi_json
+    elasticsearch-transport (1.0.7)
+      faraday
+      multi_json
     erubis (2.7.0)
     execjs (2.4.0)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
+    hashie (3.4.1)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.2.11)
@@ -104,6 +126,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.11.0)
+    multipart-post (2.0.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
@@ -212,10 +235,13 @@ PLATFORMS
 
 DEPENDENCIES
   albino
+  bonsai-elasticsearch-rails
   bundler (>= 1.7.0)
   byebug
   coffee-rails (~> 4.1.0)
   devise
+  elasticsearch-model!
+  elasticsearch-rails!
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.0)
   jquery-rails

@@ -1,0 +1,33 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+ 
+  <center><h1>Search Results</h1></center>
+ 
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th class="col-md-2">Title</th>
+        <th class="col-md-2">Author</th>
+        <th class="col-md-8">Content</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+ 
+    <tbody>
+      <% @pages.each do |page| %>
+        <tr>
+          <td><%= page.title %></td>
+          <td><%= page.author %></td>
+          <td><%= page.content %></td>
+          <td><%= link_to 'Show', page %></td>
+          <td><%= link_to 'Edit', edit_page_path(page) %></td>
+          <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+ 
+  <br>
+ 
+  <%= link_to 'New page', new_page_path, class: "btn btn-default" %>
+</div>

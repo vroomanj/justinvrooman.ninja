@@ -26,6 +26,7 @@ class PagesController < ApplicationController
   # POST /pages.json
   def create
     @page = Page.new(page_params)
+    @page.__elasticsearch__.index_document
 
     respond_to do |format|
       if @page.save
@@ -41,6 +42,8 @@ class PagesController < ApplicationController
   # PATCH/PUT /pages/1
   # PATCH/PUT /pages/1.json
   def update
+    @page.__elasticsearch__.update_document
+
     respond_to do |format|
       if @page.update(page_params)
         format.html { redirect_to @page, notice: 'Page was successfully updated.' }
@@ -55,7 +58,9 @@ class PagesController < ApplicationController
   # DELETE /pages/1
   # DELETE /pages/1.json
   def destroy
+    @page.__elasticsearch__.delete_document
     @page.destroy
+
     respond_to do |format|
       format.html { redirect_to pages_url, notice: 'Page was successfully destroyed.' }
       format.json { head :no_content }
@@ -70,6 +75,14 @@ class PagesController < ApplicationController
     @page.content = params[:content][:page_content][:value]
     @page.save!
     render text: ""
+  end
+
+  def search
+    if params[:search].present?
+      @pages = Page.__elasticsearch__.search(params[:search]).records
+    else
+      @pages = Page.all
+    end
   end
 
   private
