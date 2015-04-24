@@ -53,7 +53,8 @@ gem 'rack-canonical-host'
 gem 'redcarpet'
 gem 'albino'
 gem 'nokogiri'
-gem 'pagedown-rails'
+gem 'pagedown-rails', '~> 1.1.3'
+gem 'friendly_id', '~> 5.1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
