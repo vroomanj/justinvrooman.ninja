@@ -2,20 +2,21 @@
 
   <p>
     <strong>Title:</strong>
-    <%= @page.title %>
+    <span id="page_title" data-mercury="full"><%= raw @page.title %></span>
   </p>
 
   <p>
     <strong>Author:</strong>
-    <%= @page.author %>
+    <span id="page_author" data-mercury="full"><%= raw @page.author %></span>
   </p>
 
   <p>
     <strong>Content:</strong>
-    <%= markdown(@page.content) %>
+    <div id="page_content" data-mercury="full"><%= raw @page.content %></div>
   </p>
 
-  <%= link_to 'Edit', edit_page_path(@page) %> |
-  <%= link_to 'Back', pages_path %>
-
 </div>
+
+<% if admin_signed_in? %>
+  <center><%= link_to "Edit page", "/editor" + request.path, data: { save_url: mercury_update_page_path(@page) }, class: "btn btn-default", id: "edit_link", :style => "margin-top:30px;" %></center>
+<% end %>

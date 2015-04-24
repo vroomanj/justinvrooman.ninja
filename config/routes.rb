@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  mount Mercury::Engine => '/'
+  
   root 'pages#index'
 
-  resources :pages
+  resources :pages do
+    member { post :mercury_update }
+  end
 
   devise_for :users
   scope "/admin" do

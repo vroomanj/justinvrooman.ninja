@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :set_page, only: [:show, :edit, :update, :destroy, :mercury_update]
   before_action :authenticate_admin!, except: [:index, :show, :contact]
 
   # GET /pages
@@ -64,6 +64,14 @@ class PagesController < ApplicationController
 
   def manage
     @pages = Page.all
+  end
+
+  def mercury_update
+    @page.title = params[:content][:page_title][:value]
+    @page.author = params[:content][:page_author][:value]
+    @page.content = params[:content][:page_content][:value]
+    @page.save!
+    render text: ""
   end
 
   private
