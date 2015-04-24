@@ -67,8 +67,6 @@ class PagesController < ApplicationController
   end
 
   def mercury_update
-    @page.title = params[:content][:page_title][:value]
-    @page.author = params[:content][:page_author][:value]
     @page.content = params[:content][:page_content][:value]
     @page.save!
     render text: ""
