@@ -22,12 +22,12 @@
 
 $(document).ready(function(){
 	$('.offcanvas').bind('show.bs.offcanvas', function() {
-    	$('#left-nav-icon').toggleClass('closed');
+    	$('#left-nav-icon').removeClass('closed');
 	});
 });
 
 $(document).ready(function(){
 	$('.offcanvas').bind('hide.bs.offcanvas', function() {
-    	$('#left-nav-icon').toggleClass('closed');
+    	$('#left-nav-icon').addClass('closed');
 	});
 });
