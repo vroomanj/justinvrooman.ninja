@@ -27,7 +27,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	$('#left-nav-icon').on('focusout', function() {
+	$('.offcanvas').bind('hide.bs.offcanvas', function() {
     	$('#left-nav-icon').toggleClass('closed');
 	});
 });
