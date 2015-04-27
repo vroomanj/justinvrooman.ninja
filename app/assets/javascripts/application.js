@@ -21,8 +21,8 @@
 //= require markdown.editor
 
 $(document).ready(function(){
-	$('#left-nav-icon').click(function(){
-		$(this).toggleClass('closed');
+	$('.offcanvas').bind('show.bs.offcanvas', function() {
+    	$('#left-nav-icon').toggleClass('closed');
 	});
 });
 
