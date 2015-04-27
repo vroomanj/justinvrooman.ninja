@@ -19,3 +19,15 @@
 //= require markdown.converter
 //= require markdown.sanitizer
 //= require markdown.editor
+
+$(document).ready(function(){
+	$('#left-nav-icon').click(function(){
+		$(this).toggleClass('closed');
+	});
+});
+
+$(document).ready(function(){
+	$('#left-nav-icon').on('focusout', function() {
+    	$('#left-nav-icon').toggleClass('closed');
+	});
+});
