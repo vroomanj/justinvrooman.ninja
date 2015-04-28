@@ -50,3 +50,19 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+<div id="custom-container">
+
+  <p>
+    <div id="page_content" data-mercury="full">
+      
+      <!-- Content -->
+
+    </div>
+  </p>
+
+</div>
+
+<% if admin_signed_in? %>
+  <center><%= link_to "Edit page", "/editor" + request.path, data: { save_url: root_path }, class: "btn btn-default", id: "edit_link", :style => "margin-top:30px;" %></center>
+<% end %>
