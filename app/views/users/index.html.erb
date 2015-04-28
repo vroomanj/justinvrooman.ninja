@@ -32,8 +32,8 @@
       <td>never</td>
       <% end %>
       <td><%= user.last_sign_in_ip %></td>
-      <td><%= link_to 'Edit', edit_user_path(user.id), class: "btn btn-default pull-right" %></td>
-      <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default pull-right" %></td>
+      <td><%= link_to 'Edit', edit_user_path(user.id), class: "btn btn-warning pull-right" %></td>
+      <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger pull-right" %></td>
     </tr>
 
     <% end %>
