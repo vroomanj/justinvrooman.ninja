@@ -31,3 +31,21 @@ $(document).ready(function(){
     	$('#left-nav-icon').addClass('closed');
 	});
 });
+
+jQuery(function($){
+	var lastScrollTop = 0;
+	var top = parseInt(document.getElementById('header-bg').style.top);
+	$(window).scroll(function(event){
+		var st = $(this).scrollTop();
+		if (st > lastScrollTop){
+			// downscroll code
+			top = top - 20;
+			document.getElementById('header-bg').style.top = top + 'px';
+		} else {
+			// upscroll code
+			top = top + 10;
+			document.getElementById('header-bg').style.top = top + 'px';
+		}
+		lastScrollTop = st;
+	});
+});
