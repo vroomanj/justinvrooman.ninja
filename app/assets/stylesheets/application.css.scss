@@ -180,20 +180,23 @@ body, html, main {
 }
  
 .cd-fixed-bg.cd-bg-1 {
-  background-image: image-url("header-background.jpg");
+  background-image: image-url("header-background1.jpg");
 }
 .cd-fixed-bg.cd-bg-2 {
-  background-image: url("...");
+  background-image: image-url("header-background2.jpg");
 }
 .cd-fixed-bg.cd-bg-3 {
-  background-image: url("...");
+  background-image: image-url("header-background3.jpg");
 }
 .cd-fixed-bg.cd-bg-4 {
-  background-image: url("...");
+  background-image: image-url("header-background4.jpg");
 }
  
 .cd-scrolling-bg {
   min-height: 100%;
+  width: 100%;
+  display: table;
+  text-align: center;
 }
 
 
