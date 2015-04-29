@@ -5,14 +5,7 @@
 html, body {
   background-image: image-url("background.png");
   color: white;
-  padding-left: 5%;
-  padding-right: 5%;
   height: 100%;
-}
-
-body {
-  margin-top: 50px;
-  padding: 50px 0 0 0;
 }
 
 textarea.form-control {
@@ -78,6 +71,10 @@ textarea.form-control {
   word-wrap: break-word;
 }
 
+.face {
+  margin-top: 200px;
+}
+
 #custom-container {
   background-color: #F8F8F8;
   box-shadow: 0px 5px 0px #EEEEEE;
@@ -88,8 +85,9 @@ textarea.form-control {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
-  margin-right: auto;  
-  width: 100%;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 90%;
 }
 
 #custom-form-container {
@@ -103,6 +101,7 @@ textarea.form-control {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 100px;
   width: 60%;
 }
 
@@ -159,6 +158,42 @@ for animated hamburger
   .bottom-bar {
     transform: rotate(0);
   }
+}
+
+/*
+
+for scrolling
+
+*/
+
+body, html, main {
+  /* important */
+  height: 100%;
+}
+ 
+.cd-fixed-bg {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+ 
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("header-background.jpg");
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("...");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("...");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("...");
+}
+ 
+.cd-scrolling-bg {
+  min-height: 100%;
 }
 
 
