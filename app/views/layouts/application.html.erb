@@ -31,9 +31,9 @@
 
 <%= yield %>
 
-<div class="footer">
+<% if !current_page?(root_path) %>
   <%= render 'layouts/footer' %>
-</div>
+<% end %>
 
 </body>
 </html>
