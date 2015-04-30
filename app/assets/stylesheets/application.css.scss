@@ -92,6 +92,7 @@ textarea.form-control {
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+  margin-bottom: 50px;
   width: 90%;
 }
 
@@ -107,6 +108,7 @@ textarea.form-control {
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+  margin-bottom: 50px;
   width: 60%;
 }
 
@@ -238,6 +240,15 @@ for footer
 
 .footer {
   background-color: #212121;
+  border-top: 1px solid #060606;
+  padding-top: 20px;
+}
+
+.ndx-footer {
+  height: 150px;
+  background-color: #212121;
+  border-top: 1px solid #060606;
+  padding-top: 20px;
 }
 
 
