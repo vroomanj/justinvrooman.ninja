@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "jasny-bootstrap";
 @import "markdown";
+@import "font-awesome";
 
 html, body {
   background-image: image-url("background.png");
@@ -103,6 +104,18 @@ textarea.form-control {
   margin-right: auto;
   margin-top: 100px;
   width: 60%;
+}
+
+#toTop {
+    padding: 5px 3px;
+    background: #212121;
+    box-shadow: 0px 5px 0px #060606;
+    border-radius: 10px;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }
 
 /*

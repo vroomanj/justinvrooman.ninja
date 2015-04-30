@@ -34,18 +34,30 @@ $(document).ready(function(){
 
 //jQuery(function($){
 //	var lastScrollTop = 0;
-//	var top = parseInt(document.getElementById('header-bg').style.top);
 //	$(window).scroll(function(event){
 //		var st = $(this).scrollTop();
 //		if (st > lastScrollTop){
 //			// downscroll code
-//			top = top - 20;
-//			document.getElementById('header-bg').style.top = top + 'px';
 //		} else {
 //			// upscroll code
-//			top = top + 10;
-//			document.getElementById('header-bg').style.top = top + 'px';
 //		}
 //		lastScrollTop = st;
 //	});
 //});
+
+jQuery(function($){
+	$(window).scroll(function() {
+	    if ($(this).scrollTop()) {
+	        $('#toTop').fadeIn();
+	    } else {
+	        $('#toTop').fadeOut();
+	    }
+	});
+});
+
+jQuery(function($){
+	$("a[href='#']").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, "slow");
+	  return false;
+	});
+});
