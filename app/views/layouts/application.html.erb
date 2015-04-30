@@ -29,10 +29,19 @@
   <% end %>
 <% end %>
 
-<%= yield %>
+<% if !current_page?(root_path) %>
+  <div class="wrapper">
+<% end %>
+    <%= yield %>
+<% if !current_page?(root_path) %>
+    <div class="push"></div>
+  </div>
+<% end %>
 
 <% if !current_page?(root_path) %>
-  <%= render 'layouts/footer' %>
+  <div class="footer">
+    <%= render 'layouts/footer' %>
+  </div>
 <% end %>
 
 </body>
