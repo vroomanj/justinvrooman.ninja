@@ -61,3 +61,38 @@ jQuery(function($){
 	  return false;
 	});
 });
+
+jQuery(function($){
+	$("a[href='#about']").click(function() {
+		$("html, body").animate({ scrollTop: $("a[name='about']").offset().top }, "slow");
+	   return false;
+	});
+});
+
+jQuery(function($){
+	$("a[href='#systems']").click(function() {
+		$("html, body").animate({ scrollTop: $("a[name='systems']").offset().top }, "slow");
+	   return false;
+	});
+});
+
+jQuery(function($){
+	$("a[href='#hardware']").click(function() {
+		$("html, body").animate({ scrollTop: $("a[name='hardware']").offset().top }, "slow");
+	   return false;
+	});
+});
+
+jQuery(function($){
+	$("a[href='#network']").click(function() {
+		$("html, body").animate({ scrollTop: $("a[name='network']").offset().top }, "slow");
+	   return false;
+	});
+});
+
+jQuery(function($){
+	$("a[href='#education']").click(function() {
+		$("html, body").animate({ scrollTop: $("a[name='education']").offset().top }, "slow");
+	   return false;
+	});
+});
