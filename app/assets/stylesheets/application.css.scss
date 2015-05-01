@@ -385,7 +385,24 @@ for footer
   }
 
   .dropdown-menu {
-    background-color: #208db8;
+    background-color: #2a608b;
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-menu > li > a {
+    color: white;
+  }
+
+  .dropdown-menu > li > a:hover {
+    background-color: #224e72;
+    color: white;
+  }
+
+  .dropdown-menu > li > a:focus {
+    background-color: #224e72;
+    color: white;
   }
 
   #custom-form-container {
@@ -417,6 +434,14 @@ for footer
 
   .dropdown-menu {
     background-color: #208db8;
+  }
+
+  .dropdown-menu > li > a {
+    color: white;
+  }
+
+  .dropdown-menu > li > a:hover {
+    background-color: #2a608b;
   }
 
   #custom-form-container {
