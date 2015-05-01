@@ -351,6 +351,14 @@ for footer
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+  h1 {
+    font-size: medium;
+  }
+
+  h2 {
+    font-size: medium;
+  }
+
   #custom-form-container {
     width: 90%;
   }
@@ -358,6 +366,14 @@ for footer
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
+  h1 {
+    font-size: medium;
+  }
+
+  h2 {
+    font-size: medium;
+  }
+
   #custom-form-container {
     width: 100%;
   }  
