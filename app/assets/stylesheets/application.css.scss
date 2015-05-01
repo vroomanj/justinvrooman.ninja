@@ -153,10 +153,7 @@ h2 {
   border: 1px solid #060606;
   border-radius: 0px 0px 5px 5px;
   position: fixed;
-  left: 0px;
-  right: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   bottom: 0px;
 }
 
@@ -379,6 +376,10 @@ for footer
   #custom-form-container {
     width: 90%;
   }
+
+  #ndx-nav {
+    display: none;
+  }
 }
 
 /* Custom, iPhone Retina */ 
@@ -397,5 +398,9 @@ for footer
 
   #custom-form-container {
     width: 100%;
-  }  
+  }
+
+  #ndx-nav {
+    display: none;
+  }
 }
