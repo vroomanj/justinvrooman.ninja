@@ -351,6 +351,14 @@ for footer
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+  h1 {
+    font-size: xx-large;
+  }
+
+  h2 {
+    font-size: x-large;
+  }
+
   .face {
     margin-top: 100px;
   }
@@ -362,6 +370,14 @@ for footer
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
+  h1 {
+    font-size: xx-large;
+  }
+
+  h2 {
+    font-size: x-large;
+  }
+
   .face {
     margin-top: 100px;
   }
