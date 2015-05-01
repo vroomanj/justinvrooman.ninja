@@ -391,6 +391,10 @@ for footer
   #ndxNav {
     display: none;
   }
+
+  #mobileNdxNav {
+    display: inline;
+  }
 }
 
 /* Custom, iPhone Retina */ 
@@ -413,5 +417,9 @@ for footer
 
   #ndxNav {
     display: none;
+  }
+
+  #mobileNdxNav {
+    display: inline;
   }
 }
