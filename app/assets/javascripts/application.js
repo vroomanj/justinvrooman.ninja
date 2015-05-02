@@ -63,6 +63,27 @@ jQuery(function($){
 });
 
 jQuery(function($){
+	$(document).ready(function() {
+		if ( $(window).width() < 768) {
+			$(".fa-arrow-up").addClass("fa-3x");
+			$(".fa-arrow-up").removeClass("fa-5x");
+		}
+	});
+});
+
+jQuery(function($){
+	$(window).resize(function() {
+		if ( $(window).width() < 768) {
+			$(".fa-arrow-up").addClass("fa-3x");
+			$(".fa-arrow-up").removeClass("fa-5x");
+		} else {
+			$(".fa-arrow-up").addClass("fa-5x");
+			$(".fa-arrow-up").removeClass("fa-3x");
+		}
+	});
+});
+
+jQuery(function($){
 	$("a[href='#about']").click(function() {
 		$("html, body").animate({ scrollTop: $("a[name='about']").offset().top }, "slow");
 	   return false;
