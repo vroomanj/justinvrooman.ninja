@@ -88,6 +88,34 @@ h2 {
   word-wrap: break-word;
 }
 
+.dropdown-menu {
+  background-color: #212121;
+}
+
+.dropdown-menu > li > a {
+  color: #9d9d9d;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #060606;
+  color: white;
+}
+
+.dropdown-menu > li > a:focus {
+  background-color: #060606;
+  color: white;
+}
+
+.dropdown-menu > li > a:active {
+  background-color: #060606;
+  color: white;
+}
+
+.divider {
+  background-color: #060606;
+  border-top: 1px solid #060606;
+}
+
 #custom-container {
   background-color: #F8F8F8;
   box-shadow: 0px 5px 0px #EEEEEE;
