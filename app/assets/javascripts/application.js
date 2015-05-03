@@ -64,8 +64,11 @@ jQuery(function($){
 
 jQuery(function($){
 	$(document).ready(function() {
-		if ( $(window).width() < 768) {
+		if ( $(window).width() <= 768 ) {
 			$(".fa-arrow-up").addClass("fa-3x");
+			$(".fa-arrow-up").removeClass("fa-5x");
+		} else if ( $(window).width() <= 320 ) {
+			$(".fa-arrow-up").addClass("fa-lg");
 			$(".fa-arrow-up").removeClass("fa-5x");
 		}
 	});
@@ -73,11 +76,17 @@ jQuery(function($){
 
 jQuery(function($){
 	$(window).resize(function() {
-		if ( $(window).width() < 768) {
+		if ( $(window).width() <= 768) {
 			$(".fa-arrow-up").addClass("fa-3x");
+			$(".fa-arrow-up").removeClass("fa-lg");
+			$(".fa-arrow-up").removeClass("fa-5x");
+		} else if ( $(window).width() <= 320 ) {
+			$(".fa-arrow-up").addClass("fa-lg");
+			$(".fa-arrow-up").removeClass("fa-3x");
 			$(".fa-arrow-up").removeClass("fa-5x");
 		} else {
 			$(".fa-arrow-up").addClass("fa-5x");
+			$(".fa-arrow-up").removeClass("fa-lg");
 			$(".fa-arrow-up").removeClass("fa-3x");
 		}
 	});
