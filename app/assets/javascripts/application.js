@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 jQuery(function($){
 	$(window).scroll(function() {
-	    if ($(this).scrollTop()) {
+	    if ($(this).scrollTop()>=$(this).height()) {
 	        $('#toTop').fadeIn();
 	    } else {
 	        $('#toTop').fadeOut();
