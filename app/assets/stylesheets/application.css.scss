@@ -445,6 +445,7 @@ for footer
 
   .face {
     margin-top: 75px;
+    height: 300px;
   }
 
   #custom-form-container {
@@ -455,7 +456,7 @@ for footer
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
   .face {
-    height: 300px;
+    height: 200px;
   }
 
   #custom-form-container {
@@ -465,10 +466,6 @@ for footer
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
-  .face {
-    height: 200px;
-  }
-
   #custom-form-container {
     width: 100%;
   }
