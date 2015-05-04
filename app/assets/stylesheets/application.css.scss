@@ -311,10 +311,10 @@ for footer
 */
 
 .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -150px; /* the bottom margin is the negative value of the footer's height */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -150px; /* the bottom margin is the negative value of the footer's height */
 }
 
 .footer, .push {
@@ -445,6 +445,7 @@ for footer
 
   .face {
     margin-top: 75px;
+    height: 300px;
   }
 
   #custom-form-container {
