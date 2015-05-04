@@ -455,10 +455,6 @@ for footer
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-  .face {
-    height: 200px;
-  }
-
   #custom-form-container {
     width: 90%;
   }
@@ -466,6 +462,10 @@ for footer
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
+  .face {
+    height: 200px;
+  }
+
   #custom-form-container {
     width: 100%;
   }
