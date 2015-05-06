@@ -120,7 +120,9 @@ jQuery(function($){
 
 jQuery(function($){
 	$(document).ready(function() {
-		if !(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			// mobile
+		} else {
 			$.stellar({
 				horizontalScrolling: false,
 				verticalScrolling: true,
