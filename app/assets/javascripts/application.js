@@ -120,8 +120,13 @@ jQuery(function($){
 
 jQuery(function($){
 	$(document).ready(function() {
-		$.stellar({
-			horizontalScrolling: false
-		});
+		if !(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			$.stellar({
+				horizontalScrolling: false,
+				verticalScrolling: true,
+				horizontalOffset: 0,
+	  			verticalOffset: 0
+			});
+		}
 	});
 });
