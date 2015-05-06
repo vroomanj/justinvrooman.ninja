@@ -117,3 +117,11 @@ jQuery(function($){
 	   return false;
 	});
 });
+
+jQuery(function($){
+	$(document).ready(function() {
+		$.stellar({
+			horizontalScrolling: false
+		});
+	});
+});
