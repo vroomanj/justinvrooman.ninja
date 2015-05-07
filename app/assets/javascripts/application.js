@@ -118,30 +118,6 @@ jQuery(function($){
 	});
 });
 
-jQuery(function(){
-	var ua = navigator.userAgent, isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
-
-	if (isMobileWebkit) {
-		$('html').addClass('mobile');
-	}
-
-	$(function(){
-		var iScrollInstance;
-
-		if (isMobileWebkit) {
-			iScrollInstance = new iScroll('wrapper');
-
-
-		} else {
-		$.stellar({
-        horizontalScrolling: false,
-        verticalOffset: 150
-      });
-    }
-  });
-
-})();
-
 jQuery(function($){
 	$(document).ready(function() {
 		if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
