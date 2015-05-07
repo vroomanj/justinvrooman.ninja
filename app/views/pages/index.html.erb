@@ -1,60 +1,11 @@
-<!--
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <div class="fill" style="background-image:url('//placehold.it/1024x700/363636/FFF');">
-        <div class="container">
-          <div class="carousel-caption">
-            <h3>Caption 1</h3>
-            <p>Placeholder for caption content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('//placehold.it/1024x700/363636/FFF');">
-        <div class="container">
-          <div class="carousel-caption">
-            <h3>Caption 2</h3>
-            <p>Placeholder for caption content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('//placehold.it/1024x700/363636/FFF');">
-        <div class="container">
-          <div class="carousel-caption">
-            <h3>Caption 3</h3>
-            <p>Placeholder for caption content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
--->
 <main>
   <div class="cd-fixed-bg cd-bg-1" data-stellar-background-ratio="0.3">
     <div class="cd-container" style="display: table-cell; vertical-align: middle;">
-      <%= image_tag "me.jpg", :height => "400", :alt => "Justin Vrooman", :class => "img-circle face", :style => "position: relative;border: 10px solid #F8F8F8;margin-bottom: 32px;" %>
-      <h1><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Justin Vrooman&nbsp;</span></h1>
-      <h2><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Systems Administrator&nbsp;</span></h2>
+      <div id="scroller">
+        <%= image_tag "me.jpg", :height => "400", :alt => "Justin Vrooman", :class => "img-circle face", :style => "position: relative;border: 10px solid #F8F8F8;margin-bottom: 32px;" %>
+        <h1><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Justin Vrooman&nbsp;</span></h1>
+        <h2><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Systems Administrator&nbsp;</span></h2>
+      </div>
     </div>
   </div> 
 
@@ -75,7 +26,9 @@
 
   <div class="cd-fixed-bg cd-bg-2" data-stellar-background-ratio="0.3">
     <div class="cd-container" style="display: table-cell; vertical-align: middle;">
-      <h2><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Systems & Software&nbsp;</span></h2>
+      <div id="scroller">
+        <h2><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Systems & Software&nbsp;</span></h2>
+      </div>
     </div>
   </div> 
 
@@ -92,7 +45,9 @@
 
   <div class="cd-fixed-bg cd-bg-3" data-stellar-background-ratio="0.3">
     <div class="cd-container" style="display: table-cell; vertical-align: middle;">
-      <h2><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Networking & Security&nbsp;</span></h2>
+      <div id="scroller">
+        <h2><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Networking & Security&nbsp;</span></h2>
+      </div>
     </div>
   </div> 
 
@@ -109,7 +64,9 @@
 
   <div class="cd-fixed-bg cd-bg-4" data-stellar-background-ratio="0.3">
     <div class="cd-container" style="display: table-cell; vertical-align: middle;">
-      <h2><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Hardware&nbsp;</span></h2>
+      <div id="scroller">
+        <h2><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Hardware&nbsp;</span></h2>
+      </div>
     </div>
   </div> 
 
@@ -126,7 +83,9 @@
 
   <div class="cd-fixed-bg cd-bg-5" data-stellar-background-ratio="0.3">
     <div class="cd-container" style="display: table-cell; vertical-align: middle;">
-      <h2><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Education&nbsp;</span></h2>
+      <div id="scroller">
+        <h2><span style="background: rgb(33, 33, 33); background: rgba(33, 33, 33, 0.7); border: 1px solid #060606; border-radius: 5px;">&nbsp;Education&nbsp;</span></h2>
+      </div>
     </div>
   </div> 
 
