@@ -145,20 +145,7 @@ jQuery(function(){
 jQuery(function($){
 	$(document).ready(function() {
 		if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			var ua = navigator.userAgent, isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
 
-			if (isMobileWebkit) {
-				$('html').addClass('mobile');
-			}
-
-			$('#scroller').stellar({
-				scrollProperty: 'transform',
-				positionProperty: 'transform',
-				horizontalScrolling: false,
-				verticalScrolling: true,
-				horizontalOffset: 0,
-				verticalOffset: 0
-			});
 		} else {
 			$.stellar({
 				horizontalScrolling: false,

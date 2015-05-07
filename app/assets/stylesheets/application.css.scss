@@ -304,30 +304,6 @@ body, html, main {
   box-shadow: inset 0px 10px 10px rgba(0,0,0,0.5);
 }
 
-#wrapper {
-  height: inherit;
-}
-
-#scroller {
-  height: inherit;
-}
-
-.mobile body {
-  overflow: hidden;
-}
-
-.mobile #wrapper {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-.mobile #scroller {
-  height: 3000px;
-}
-
 /*
 
 for footer
