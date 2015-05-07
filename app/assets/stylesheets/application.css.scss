@@ -304,6 +304,14 @@ body, html, main {
   box-shadow: inset 0px 10px 10px rgba(0,0,0,0.5);
 }
 
+#wrapper {
+  height: inherit;
+}
+
+#scroller {
+  height: inherit;
+}
+
 .mobile body {
   overflow: hidden;
 }
@@ -318,14 +326,6 @@ body, html, main {
 
 .mobile #scroller {
   height: 3000px;
-}
-
-#wrapper {
-  height: inherit;
-}
-
-#scroller {
-  height: inherit;
 }
 
 /*
