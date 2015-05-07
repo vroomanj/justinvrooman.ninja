@@ -120,6 +120,8 @@ jQuery(function($){
 
 jQuery(function($){
 	$(document).ready(function() {
+		$.stellar( 'destroy' );
+		
 		if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			// don't initiate stellar on mobile
 		} else {
