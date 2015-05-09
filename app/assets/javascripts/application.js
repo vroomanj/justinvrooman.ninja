@@ -48,9 +48,9 @@ $(document).ready(function(){
 jQuery(function($){
 	$(window).scroll(function() {
 	    if ($(this).scrollTop()>=$(this).height()) {
-	        $('#toTop').fadeIn();
+	        $('#to-top').fadeIn();
 	    } else {
-	        $('#toTop').fadeOut();
+	        $('#to-top').fadeOut();
 	    }
 	});
 });
@@ -121,7 +121,7 @@ jQuery(function($){
 jQuery(function($){
 	$(document).ready(function() {
 		$.stellar( 'destroy' );
-		
+
 		if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			// don't initiate stellar on mobile
 		} else {
