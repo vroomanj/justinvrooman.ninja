@@ -12,3 +12,4 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( markdown-buttons.png )
 Rails.application.config.assets.precompile += %w( jquery-1.7.js )
 Rails.application.config.assets.precompile += %w( jquery.stellar.min.js )
+Rails.application.config.assets.precompile += %w( jquery.expander.min.js )

@@ -67,6 +67,7 @@ jQuery(function($){
 		if ( $(window).width() <= 768 ) {
 			$(".fa-arrow-up").addClass("fa-2x");
 			$(".fa-arrow-up").removeClass("fa-5x");
+			$("div.text").addClass("expander");
 		}
 	});
 });
@@ -149,5 +150,13 @@ jQuery(function($){
 	  			verticalOffset: 0
 			});
 		}
+	});
+});
+
+$().ready(function() {
+	$('div.expander').expander({
+		slicePoint: 500,
+		expandText: 'more',
+		userCollapseText: 'less'
 	});
 });
